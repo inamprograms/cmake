@@ -1,0 +1,7 @@
+# ninja log v5
+43	359	6802834644169676	CMakeFiles/myapp.dir/adc_src/adc.c.obj	197ca58ee1850c1e
+6	380	6802834644596112	CMakeFiles/myapp.dir/src/main.c.obj	e2ac86926d0439e3
+51	381	6802834644561181	CMakeFiles/myapp.dir/spi_src/spi.c.obj	c23b5f4306c45f7b
+47	405	6802834644951661	CMakeFiles/myapp.dir/i2c_src/i2c.c.obj	8db2cd85e3bec2d2
+55	406	6802834644951661	CMakeFiles/myapp.dir/uart_src/uart.c.obj	1191afdcee781345
+406	722	6802834647915962	myapp.exe	ec8a013f2cb3cf0a

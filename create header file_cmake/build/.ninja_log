@@ -1,0 +1,4 @@
+# ninja log v5
+41	202	6802872882442808	CMakeFiles/myapp.dir/src/test.c.obj	f9d35c17b21bbc53
+5	203	6802872882442808	CMakeFiles/myapp.dir/src/main.c.obj	e8dea4c9d1e9e328
+204	555	6802872885889997	myapp.exe	500f844debf09cb0
