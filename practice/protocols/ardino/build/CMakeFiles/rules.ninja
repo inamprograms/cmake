@@ -6,7 +6,7 @@
 # It is included in the main 'build.ninja'.
 
 # =============================================================================
-# Project: app
+# Project: ardino
 # Configurations: 
 # =============================================================================
 # =============================================================================
@@ -14,7 +14,7 @@
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER__app_
+rule C_COMPILER__ardino_
   depfile = $DEP_FILE
   deps = gcc
   command = C:\msys64\mingw64\bin\cc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -22,11 +22,11 @@ rule C_COMPILER__app_
 
 
 #############################################
-# Rule for linking C executable.
+# Rule for linking C static library.
 
-rule C_EXECUTABLE_LINKER__app_
-  command = cmd.exe /C "$PRE_LINK && C:\msys64\mingw64\bin\cc.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
-  description = Linking C executable $TARGET_FILE
+rule C_STATIC_LIBRARY_LINKER__ardino_
+  command = cmd.exe /C "$PRE_LINK && C:\msys64\mingw64\bin\cmake.exe -E rm -f $TARGET_FILE && C:\msys64\mingw64\bin\ar.exe qc $TARGET_FILE $LINK_FLAGS $in && C:\msys64\mingw64\bin\ranlib.exe $TARGET_FILE && $POST_BUILD"
+  description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
 
@@ -42,7 +42,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = C:\msys64\mingw64\bin\cmake.exe --regenerate-during-build -SD:\EpTech\CMAKE\practice\protocols -BD:\EpTech\CMAKE\practice\protocols\build
+  command = C:\msys64\mingw64\bin\cmake.exe --regenerate-during-build -SD:\EpTech\CMAKE\practice\protocols\ardino -BD:\EpTech\CMAKE\practice\protocols\ardino\build
   description = Re-running CMake...
   generator = 1
 

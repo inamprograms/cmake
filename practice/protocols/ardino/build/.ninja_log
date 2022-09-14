@@ -1,0 +1,5 @@
+# ninja log v5
+6	242	6848458926695822	CMakeFiles/ardino.dir/src/gpio.c.obj	fd56bdc65fb9d430
+27	244	6848458926731160	CMakeFiles/ardino.dir/src/timer.c.obj	a20d26ff7808686
+245	449	6848458928773645	libardino.a	5493e456783c9e6d
+18	340	6848461909179323	libardino.a	c8cafd1ddaa73ab0

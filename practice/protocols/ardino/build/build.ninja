@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: app
+# Project: ardino
 # Configurations: 
 # =============================================================================
 
@@ -34,87 +34,43 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = D$:/EpTech/CMAKE/practice/protocols/build/
+cmake_ninja_workdir = D$:/EpTech/CMAKE/practice/protocols/ardino/build/
 # =============================================================================
-# Object build statements for EXECUTABLE target app
+# Object build statements for STATIC_LIBRARY target ardino
 
 
 #############################################
-# Order-only phony target for app
+# Order-only phony target for ardino
 
-build cmake_object_order_depends_target_app: phony || CMakeFiles/app.dir
+build cmake_object_order_depends_target_ardino: phony || CMakeFiles/ardino.dir
 
-build CMakeFiles/app.dir/src/adc.c.obj: C_COMPILER__app_ D$:/EpTech/CMAKE/practice/protocols/src/adc.c || cmake_object_order_depends_target_app
-  DEP_FILE = CMakeFiles\app.dir\src\adc.c.obj.d
-  INCLUDES = -ID:/EpTech/CMAKE/practice/protocols/include -ID:/EpTech/CMAKE/practice/protocols/controller_include -ID:/EpTech/CMAKE/practice/protocols/ardino/include
-  OBJECT_DIR = CMakeFiles\app.dir
-  OBJECT_FILE_DIR = CMakeFiles\app.dir\src
-
-build CMakeFiles/app.dir/src/i2c.c.obj: C_COMPILER__app_ D$:/EpTech/CMAKE/practice/protocols/src/i2c.c || cmake_object_order_depends_target_app
-  DEP_FILE = CMakeFiles\app.dir\src\i2c.c.obj.d
-  INCLUDES = -ID:/EpTech/CMAKE/practice/protocols/include -ID:/EpTech/CMAKE/practice/protocols/controller_include -ID:/EpTech/CMAKE/practice/protocols/ardino/include
-  OBJECT_DIR = CMakeFiles\app.dir
-  OBJECT_FILE_DIR = CMakeFiles\app.dir\src
-
-build CMakeFiles/app.dir/src/main.c.obj: C_COMPILER__app_ D$:/EpTech/CMAKE/practice/protocols/src/main.c || cmake_object_order_depends_target_app
-  DEP_FILE = CMakeFiles\app.dir\src\main.c.obj.d
-  INCLUDES = -ID:/EpTech/CMAKE/practice/protocols/include -ID:/EpTech/CMAKE/practice/protocols/controller_include -ID:/EpTech/CMAKE/practice/protocols/ardino/include
-  OBJECT_DIR = CMakeFiles\app.dir
-  OBJECT_FILE_DIR = CMakeFiles\app.dir\src
-
-build CMakeFiles/app.dir/src/spi.c.obj: C_COMPILER__app_ D$:/EpTech/CMAKE/practice/protocols/src/spi.c || cmake_object_order_depends_target_app
-  DEP_FILE = CMakeFiles\app.dir\src\spi.c.obj.d
-  INCLUDES = -ID:/EpTech/CMAKE/practice/protocols/include -ID:/EpTech/CMAKE/practice/protocols/controller_include -ID:/EpTech/CMAKE/practice/protocols/ardino/include
-  OBJECT_DIR = CMakeFiles\app.dir
-  OBJECT_FILE_DIR = CMakeFiles\app.dir\src
-
-build CMakeFiles/app.dir/src/uart.c.obj: C_COMPILER__app_ D$:/EpTech/CMAKE/practice/protocols/src/uart.c || cmake_object_order_depends_target_app
-  DEP_FILE = CMakeFiles\app.dir\src\uart.c.obj.d
-  INCLUDES = -ID:/EpTech/CMAKE/practice/protocols/include -ID:/EpTech/CMAKE/practice/protocols/controller_include -ID:/EpTech/CMAKE/practice/protocols/ardino/include
-  OBJECT_DIR = CMakeFiles\app.dir
-  OBJECT_FILE_DIR = CMakeFiles\app.dir\src
-
-build CMakeFiles/app.dir/controller_src/ardino.c.obj: C_COMPILER__app_ D$:/EpTech/CMAKE/practice/protocols/controller_src/ardino.c || cmake_object_order_depends_target_app
-  DEP_FILE = CMakeFiles\app.dir\controller_src\ardino.c.obj.d
-  INCLUDES = -ID:/EpTech/CMAKE/practice/protocols/include -ID:/EpTech/CMAKE/practice/protocols/controller_include -ID:/EpTech/CMAKE/practice/protocols/ardino/include
-  OBJECT_DIR = CMakeFiles\app.dir
-  OBJECT_FILE_DIR = CMakeFiles\app.dir\controller_src
-
-build CMakeFiles/app.dir/controller_src/esp32.c.obj: C_COMPILER__app_ D$:/EpTech/CMAKE/practice/protocols/controller_src/esp32.c || cmake_object_order_depends_target_app
-  DEP_FILE = CMakeFiles\app.dir\controller_src\esp32.c.obj.d
-  INCLUDES = -ID:/EpTech/CMAKE/practice/protocols/include -ID:/EpTech/CMAKE/practice/protocols/controller_include -ID:/EpTech/CMAKE/practice/protocols/ardino/include
-  OBJECT_DIR = CMakeFiles\app.dir
-  OBJECT_FILE_DIR = CMakeFiles\app.dir\controller_src
-
-build CMakeFiles/app.dir/controller_src/stm.c.obj: C_COMPILER__app_ D$:/EpTech/CMAKE/practice/protocols/controller_src/stm.c || cmake_object_order_depends_target_app
-  DEP_FILE = CMakeFiles\app.dir\controller_src\stm.c.obj.d
-  INCLUDES = -ID:/EpTech/CMAKE/practice/protocols/include -ID:/EpTech/CMAKE/practice/protocols/controller_include -ID:/EpTech/CMAKE/practice/protocols/ardino/include
-  OBJECT_DIR = CMakeFiles\app.dir
-  OBJECT_FILE_DIR = CMakeFiles\app.dir\controller_src
+build CMakeFiles/ardino.dir/src/gpio.c.obj: C_COMPILER__ardino_ D$:/EpTech/CMAKE/practice/protocols/ardino/src/gpio.c || cmake_object_order_depends_target_ardino
+  DEP_FILE = CMakeFiles\ardino.dir\src\gpio.c.obj.d
+  INCLUDES = -ID:/EpTech/CMAKE/practice/protocols/ardino/include
+  OBJECT_DIR = CMakeFiles\ardino.dir
+  OBJECT_FILE_DIR = CMakeFiles\ardino.dir\src
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target app
+# Link build statements for STATIC_LIBRARY target ardino
 
 
 #############################################
-# Link the executable app.exe
+# Link the static library libardino.a
 
-build app.exe: C_EXECUTABLE_LINKER__app_ CMakeFiles/app.dir/src/adc.c.obj CMakeFiles/app.dir/src/i2c.c.obj CMakeFiles/app.dir/src/main.c.obj CMakeFiles/app.dir/src/spi.c.obj CMakeFiles/app.dir/src/uart.c.obj CMakeFiles/app.dir/controller_src/ardino.c.obj CMakeFiles/app.dir/controller_src/esp32.c.obj CMakeFiles/app.dir/controller_src/stm.c.obj | ../ardino/build/libardino.a
-  LINK_LIBRARIES = ../ardino/build/libardino.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\app.dir
+build libardino.a: C_STATIC_LIBRARY_LINKER__ardino_ CMakeFiles/ardino.dir/src/gpio.c.obj
+  OBJECT_DIR = CMakeFiles\ardino.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = app.exe
-  TARGET_IMPLIB = libapp.dll.a
-  TARGET_PDB = app.exe.dbg
+  TARGET_FILE = libardino.a
+  TARGET_PDB = ardino.a.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\EpTech\CMAKE\practice\protocols\build && C:\msys64\mingw64\bin\cmake-gui.exe -SD:\EpTech\CMAKE\practice\protocols -BD:\EpTech\CMAKE\practice\protocols\build"
+  COMMAND = cmd.exe /C "cd /D D:\EpTech\CMAKE\practice\protocols\ardino\build && C:\msys64\mingw64\bin\cmake-gui.exe -SD:\EpTech\CMAKE\practice\protocols\ardino -BD:\EpTech\CMAKE\practice\protocols\ardino\build"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -126,7 +82,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\EpTech\CMAKE\practice\protocols\build && C:\msys64\mingw64\bin\cmake.exe --regenerate-during-build -SD:\EpTech\CMAKE\practice\protocols -BD:\EpTech\CMAKE\practice\protocols\build"
+  COMMAND = cmd.exe /C "cd /D D:\EpTech\CMAKE\practice\protocols\ardino\build && C:\msys64\mingw64\bin\cmake.exe --regenerate-during-build -SD:\EpTech\CMAKE\practice\protocols\ardino -BD:\EpTech\CMAKE\practice\protocols\ardino\build"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -136,7 +92,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build app: phony app.exe
+build ardino: phony libardino.a
 
 # =============================================================================
 # Folder targets.
@@ -144,9 +100,9 @@ build app: phony app.exe
 # =============================================================================
 
 #############################################
-# Folder: D:/EpTech/CMAKE/practice/protocols/build
+# Folder: D:/EpTech/CMAKE/practice/protocols/ardino/build
 
-build all: phony app.exe
+build all: phony libardino.a
 
 # =============================================================================
 # Built-in targets

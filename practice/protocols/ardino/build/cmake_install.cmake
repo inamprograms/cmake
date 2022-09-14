@@ -1,8 +1,8 @@
-# Install script for directory: D:/EpTech/CMAKE/practice/protocols
+# Install script for directory: D:/EpTech/CMAKE/practice/protocols/ardino
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/app")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/ardino")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/EpTech/CMAKE/practice/protocols/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/EpTech/CMAKE/practice/protocols/ardino/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

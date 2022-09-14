@@ -1,14 +1,12 @@
 # ninja log v5
-104	605	6848392367900054	CMakeFiles/app.dir/src/i2c.obj	cb8535a5c26e1e47
-190	568	6848392367531971	CMakeFiles/app.dir/src/spi.obj	437a84b344091da0
-233	1412	6848392376290404	CMakeFiles/app.dir/controller_src/ardino.obj	cfe64548f2fa14e1
-606	1534	6848392377485124	CMakeFiles/app.dir/controller_src/stm.obj	2137f98ac1a69c60
-31	729	6848392369279964	CMakeFiles/app.dir/src/adc.obj	d1bdd100f7be462e
-217	646	6848392368077100	CMakeFiles/app.dir/src/uart.obj	1a1d2b6bca8e543
-17	396	6848399447016323	CMakeFiles/app.dir/src/main.obj	fd8a98a92181a43
-448	777	6848372694466789	app.exe	1849bd594253b363
-24	788	6848396833412940	CMakeFiles/app.dir/controller_src/esp32.obj	6eaf4daef0e95679
-40	415	6848400817332962	CMakeFiles/app.dir/controller_src/stm.obj	d5a1a28ca40ba269
-34	422	6848400817370390	CMakeFiles/app.dir/controller_src/esp32.obj	1e189a84a85c7518
-19	439	6848400817542183	CMakeFiles/app.dir/controller_src/ardino.obj	890f760fe33b0436
-440	915	6848400821950613	app.exe	78ea78b5ff73728d
+5	113	6848462515682785	CMakeFiles/app.dir/src/main.c.obj	765f833372af7d21
+16	431	6848459852645862	CMakeFiles/app.dir/src/adc.c.obj	5b4a2f7bb05469cf
+121	471	6848459853172723	CMakeFiles/app.dir/controller_src/ardino.c.obj	389fd5c9ffa58090
+101	512	6848459853740111	CMakeFiles/app.dir/src/uart.c.obj	8d35f3dfad6c7f59
+36	498	6848459853385721	CMakeFiles/app.dir/src/i2c.c.obj	3fcb999137ba99a2
+76	534	6848459854038407	CMakeFiles/app.dir/src/spi.c.obj	89ed4076e6cc417b
+412	640	6848459855099770	CMakeFiles/app.dir/controller_src/esp32.c.obj	2f492fdc97e31fa0
+114	303	6848462517491966	app.exe	d039b01d2a21946b
+431	641	6848459855150873	CMakeFiles/app.dir/controller_src/stm.c.obj	1919baa03ebeaa6d
+5	112	6848463797555351	CMakeFiles/app.dir/src/main.c.obj	765f833372af7d21
+112	306	6848463799421888	app.exe	d039b01d2a21946b

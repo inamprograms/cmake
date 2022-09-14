@@ -7,6 +7,10 @@
 #include"esp32.h"
 #include"stm.h"
 
+#include"gpio.h"
+
+
+
 void main(){
 
     printf("Main function\n");
@@ -17,4 +21,9 @@ void main(){
     ardino_uno();
     esp32_worm();
     stmF1();
+
+    gpio_pins();
+
+
+
 }
